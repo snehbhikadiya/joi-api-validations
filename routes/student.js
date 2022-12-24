@@ -9,4 +9,6 @@ route.post('/',validater('student'),studentController.createStudent);
 route.put('/:id',studentController.updateStudent);
 route.delete('/:id',studentController.deleteStudent);
 
+// commet added 
+
 module.exports=route;
