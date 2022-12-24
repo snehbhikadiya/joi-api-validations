@@ -1,0 +1,469 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0",
+      "title": "swagger",
+      "contact": {}
+    },
+    "host": "localhost:3000",
+    "basePath": "/",
+    "securityDefinitions": {},
+    "schemes": [
+      "http"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/api/student": {
+        "get": {
+          "summary": "get student",
+          "tags": [
+            "student"
+          ],
+          "operationId": "getstudent",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Accept",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "description": ""
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        },
+        "post": {
+          "summary": "create student",
+          "tags": [
+            "student"
+          ],
+          "operationId": "createstudent",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Accept",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "Content-Type",
+              "in": "header",
+              "required": false,
+              "enum": [
+                "application/json"
+              ],
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "Body",
+              "in": "body",
+              "required": true,
+              "description": "",
+              "schema": {
+                "$ref": "#/definitions/createstudentrequest"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        }
+      },
+      "/api": {
+        "get": {
+          "summary": "get One student",
+          "tags": [
+            "student"
+          ],
+          "operationId": "getOnestudent",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Accept",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "description": ""
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        }
+      },
+      "/api/student/63a589054852e0a3a6e499e5": {
+        "put": {
+          "summary": "upadte student",
+          "tags": [
+            "student"
+          ],
+          "operationId": "upadtestudent",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Accept",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "Content-Type",
+              "in": "header",
+              "required": false,
+              "enum": [
+                "application/json"
+              ],
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "Body",
+              "in": "body",
+              "required": true,
+              "description": "",
+              "schema": {
+                "$ref": "#/definitions/upadtestudentrequest"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        },
+        "delete": {
+          "summary": "delete student",
+          "tags": [
+            "student"
+          ],
+          "operationId": "deletestudent",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Accept",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "description": ""
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        }
+      },
+      "/api/club": {
+        "get": {
+          "summary": "get club",
+          "tags": [
+            "club"
+          ],
+          "operationId": "getclub",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Accept",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "description": ""
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        },
+        "post": {
+          "summary": "create club",
+          "tags": [
+            "club"
+          ],
+          "operationId": "createclub",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Accept",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "Content-Type",
+              "in": "header",
+              "required": false,
+              "enum": [
+                "application/json"
+              ],
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "Body",
+              "in": "body",
+              "required": true,
+              "description": "",
+              "schema": {
+                "$ref": "#/definitions/createclubrequest"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        }
+      },
+      "/api/club/63a58dfbeea5e8a84230bbcc": {
+        "put": {
+          "summary": "update club",
+          "tags": [
+            "club"
+          ],
+          "operationId": "updateclub",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Accept",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "Content-Type",
+              "in": "header",
+              "required": false,
+              "enum": [
+                "application/json"
+              ],
+              "type": "string",
+              "description": ""
+            },
+            {
+              "name": "Body",
+              "in": "body",
+              "required": true,
+              "description": "",
+              "schema": {
+                "$ref": "#/definitions/updateclubrequest"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        },
+        "delete": {
+          "summary": "delete club",
+          "tags": [
+            "club"
+          ],
+          "operationId": "deleteclub",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Accept",
+              "in": "header",
+              "required": true,
+              "type": "string",
+              "description": ""
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "createstudentrequest": {
+        "title": "createstudentrequest",
+        "example": {
+          "name": "krunal",
+          "id": "2",
+          "division": "B",
+          "club": "63a58e7deea5e8a84230bbce"
+        },
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "division": {
+            "type": "string"
+          },
+          "club": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "id",
+          "division",
+          "club"
+        ]
+      },
+      "upadtestudentrequest": {
+        "title": "upadtestudentrequest",
+        "example": {
+          "name": "bahutik",
+          "id": "2",
+          "division": "C"
+        },
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "division": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "id",
+          "division"
+        ]
+      },
+      "createclubrequest": {
+        "title": "createclubrequest",
+        "example": {
+          "clubtype": "agericalchar",
+          "fees": "800",
+          "day": "2-Week"
+        },
+        "type": "object",
+        "properties": {
+          "clubtype": {
+            "type": "string"
+          },
+          "fees": {
+            "type": "string"
+          },
+          "day": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "clubtype",
+          "fees",
+          "day"
+        ]
+      },
+      "updateclubrequest": {
+        "title": "updateclubrequest",
+        "example": {
+          "clubtype": "git-hub",
+          "fees": "800",
+          "day": "30"
+        },
+        "type": "object",
+        "properties": {
+          "clubtype": {
+            "type": "string"
+          },
+          "fees": {
+            "type": "string"
+          },
+          "day": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "clubtype",
+          "fees",
+          "day"
+        ]
+      }
+    },
+    "tags": [
+      {
+        "name": "student"
+      },
+      {
+        "name": "club"
+      }
+    ]
+  }
